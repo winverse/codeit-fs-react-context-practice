@@ -8,6 +8,10 @@ export default function ContextConsumerPractice() {
         <h3>다크 모드 적용하기</h3>
         <p>제공된 Custom Hook으로 Context 값을 읽어 화면을 완성합니다.</p>
       </header>
+      <p className="work-files">
+        <strong>작업 파일</strong>
+        <code>src/features/context-consumer/Exercise.jsx</code>
+      </p>
       <ol className="task-list">
         <li>
           <code>useDisplayMode()</code>로 현재 모드와 변경 함수를 읽습니다.

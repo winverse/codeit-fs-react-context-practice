@@ -20,6 +20,28 @@
   color: #5f6878;
 }
 
+.work-files {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 24px;
+  border-radius: 12px;
+  padding: 16px;
+  background: #eef2ff;
+  color: #374151;
+}
+
+.work-files ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.work-files code {
+  overflow-wrap: anywhere;
+  color: #4338ca;
+}
+
 .task-list {
   margin: 0 0 24px;
   padding-left: 22px;
