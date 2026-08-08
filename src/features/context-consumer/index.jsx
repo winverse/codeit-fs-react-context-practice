@@ -19,6 +19,10 @@ export default function ContextConsumerPractice() {
         <li>현재 모드에 따라 카드의 스타일과 안내 문구를 바꿉니다.</li>
         <li>버튼에 모드 변경 함수를 연결합니다.</li>
       </ol>
+      <p className="answer-path">
+        <strong>정답 파일</strong>
+        <code>src/features/context-consumer/answers/Exercise.jsx</code>
+      </p>
       <Exercise />
     </section>
   );

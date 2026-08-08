@@ -4,19 +4,14 @@ import { NotificationContext } from './NotificationContext';
 export function NotificationProvider({ children }) {
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
 
-  // TODO: notificationsEnabled를 이전 값의 반대로 바꾸는
-  // toggleNotifications 함수를 작성하세요.
   const toggleNotifications = () => {
-    setNotificationsEnabled((previousValue) => previousValue);
-  };
-
-  const value = {
-    notificationsEnabled,
-    toggleNotifications,
+    setNotificationsEnabled((previousValue) => !previousValue);
   };
 
   return (
-    <NotificationContext.Provider value={value}>
+    <NotificationContext.Provider
+      value={{ notificationsEnabled, toggleNotifications }}
+    >
       {children}
     </NotificationContext.Provider>
   );

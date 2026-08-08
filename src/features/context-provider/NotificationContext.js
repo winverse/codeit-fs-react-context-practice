@@ -1,2 +1,15 @@
-// TODO: createContext(null)로 NotificationContext를 만들고,
-// useContext를 감싼 useNotification Custom Hook을 작성하세요.
+import { createContext, useContext } from 'react';
+
+// 이 Context로 다음 값을 공유합니다.
+// - notificationsEnabled: 알림이 켜져 있는지를 나타내는 boolean state
+// - toggleNotifications: 알림 state를 반대로 바꾸는 함수
+export const NotificationContext = createContext(null);
+
+export function useNotification() {
+  const context = useContext(NotificationContext);
+
+  // TODO: context가 null이면 NotificationProvider 밖에서 사용한 것이므로
+  // 사용 위치를 확인할 수 있는 오류를 발생시키세요.
+
+  return context;
+}

@@ -23,10 +23,14 @@ export default function ContextProviderPractice() {
         </ol>
       </div>
       <ol className="task-list">
-        <li>Context와 Custom Hook을 만듭니다.</li>
-        <li>Provider가 알림 state와 변경 함수를 제공하게 합니다.</li>
+        <li>Custom Hook에 Provider 누락 검사를 추가합니다.</li>
+        <li>Provider의 알림 state 변경 함수를 완성합니다.</li>
         <li>중간 컴포넌트의 알림 관련 props를 제거합니다.</li>
       </ol>
+      <p className="answer-path">
+        <strong>정답 파일</strong>
+        <code>src/features/context-provider/answers/</code>
+      </p>
       <Exercise />
     </section>
   );

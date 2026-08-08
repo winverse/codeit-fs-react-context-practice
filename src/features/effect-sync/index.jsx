@@ -17,6 +17,10 @@ export default function EffectSyncPractice() {
         <li>현재 설정을 localStorage에 저장합니다.</li>
         <li>다른 실습으로 이동할 때 이전 DOM 상태를 복원합니다.</li>
       </ol>
+      <p className="answer-path">
+        <strong>정답 파일</strong>
+        <code>src/features/effect-sync/answers/Exercise.jsx</code>
+      </p>
       <Exercise />
     </section>
   );
