@@ -7,7 +7,7 @@ function ModePanel() {
   return (
     <div className="exercise-card">
       <div className="placeholder">
-        Context 값을 읽어 라이트/다크 모드 UI를 완성하세요.
+        Context 값을 읽어 라이트/다크 모드 카드 미리보기를 완성하세요.
       </div>
     </div>
   );
