@@ -9,8 +9,8 @@ export default function ContextProviderPractice() {
         <p>Prop Drilling 코드를 Context와 Provider 구조로 바꿉니다.</p>
       </header>
       <div className="work-files">
-        <strong>작업 파일</strong>
-        <ul>
+        <strong>작업 파일 (순서대로)</strong>
+        <ol>
           <li>
             <code>src/features/context-provider/NotificationContext.js</code>
           </li>
@@ -20,7 +20,7 @@ export default function ContextProviderPractice() {
           <li>
             <code>src/features/context-provider/Exercise.jsx</code>
           </li>
-        </ul>
+        </ol>
       </div>
       <ol className="task-list">
         <li>Context와 Custom Hook을 만듭니다.</li>

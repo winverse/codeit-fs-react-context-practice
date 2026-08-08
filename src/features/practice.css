@@ -30,7 +30,7 @@
   color: #374151;
 }
 
-.work-files ul {
+.work-files ol {
   display: grid;
   gap: 6px;
   margin: 0;
