@@ -1,7 +1,7 @@
-# React Context 실습
+# React 전역 데이터 실습
 
-`전역 데이터 다루기` 단원에서 배운 Context API를 사용해 알림 설정의 Prop
-Drilling을 제거하는 실습입니다.
+18페이지 `전역 데이터 다루기` 단원의 문제 해결 실습입니다. 한 번 clone한 뒤
+화면 왼쪽의 버튼을 강의 순서대로 선택하고 각 폴더의 `TODO`를 해결합니다.
 
 ## 실행 방법
 
@@ -10,23 +10,21 @@ npm install
 npm run dev
 ```
 
-## 문제
+## 단원별 실습
 
-현재 `notificationsEnabled`와 `toggleNotifications`는 `App → Dashboard →
-Header·NotificationSettings` 순서로 props를 통해 전달됩니다.
+| 순서 | 단원                                 | 수정 경로                                    |
+| ---- | ------------------------------------ | -------------------------------------------- |
+| 1    | Context로 데이터 내려주기            | `src/features/context-provider/`             |
+| 2    | 다크 모드 적용하기                   | `src/features/context-consumer/Exercise.jsx` |
+| 3    | useEffect로 외부 시스템과 동기화하기 | `src/features/effect-sync/Exercise.jsx`      |
 
-다음 파일의 `TODO`를 순서대로 해결합니다.
+각 실습의 화면 안내와 코드의 `TODO`를 확인합니다. 완료한 이전 실습은 다음
+실습으로 이동한 뒤에도 코드를 그대로 유지합니다.
 
-1. `src/contexts/NotificationContext.js`에 Context와 `useNotification` Custom
-   Hook을 만듭니다.
-2. `src/providers/NotificationProvider.jsx`에 알림 상태와 변경 함수를 제공하는
-   Provider를 만듭니다.
-3. `App`을 Provider로 감싸고 `Dashboard`에서 알림 관련 props를 제거합니다.
-4. `Header`와 `NotificationSettings`에서 `useNotification()`으로 필요한 값을
-   읽습니다.
+## 공통 성공 조건
 
-## 성공 조건
-
-- `Dashboard`가 알림 관련 props를 받거나 전달하지 않습니다.
-- 버튼을 누르면 Header의 상태와 설정 안내가 함께 바뀝니다.
-- `npm run lint`, `npm run build`, `npm run format:check`가 모두 통과합니다.
+```bash
+npm run lint
+npm run build
+npm run format:check
+```

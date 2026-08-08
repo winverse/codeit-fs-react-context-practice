@@ -6,6 +6,18 @@
   text-rendering: optimizeLegibility;
 }
 
+html[data-scale='small'] {
+  font-size: 14px;
+}
+
+html[data-scale='medium'] {
+  font-size: 16px;
+}
+
+html[data-scale='large'] {
+  font-size: 20px;
+}
+
 * {
   box-sizing: border-box;
 }
