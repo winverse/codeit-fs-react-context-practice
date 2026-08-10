@@ -12,9 +12,6 @@ export default function ContextProviderPractice() {
         <strong>작업 파일 (순서대로)</strong>
         <ol>
           <li>
-            <code>src/features/context-provider/NotificationContext.js</code>
-          </li>
-          <li>
             <code>src/features/context-provider/NotificationProvider.jsx</code>
           </li>
           <li>
@@ -23,8 +20,10 @@ export default function ContextProviderPractice() {
         </ol>
       </div>
       <ol className="task-list">
-        <li>Custom Hook에 Provider 누락 검사를 추가합니다.</li>
         <li>Provider의 알림 state 변경 함수를 완성합니다.</li>
+        <li>
+          준비된 <code>useNotification()</code>으로 Context 값을 읽습니다.
+        </li>
         <li>중간 컴포넌트의 알림 관련 props를 제거합니다.</li>
       </ol>
       <p className="answer-path">

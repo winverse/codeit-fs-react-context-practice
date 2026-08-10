@@ -31,9 +31,9 @@ export default function Exercise() {
   };
 
   // TODO:
-  // 1. NotificationContext.js에 Context와 Custom Hook을 만드세요.
-  // 2. NotificationProvider.jsx에 state와 변경 함수를 옮기세요.
-  // 3. 중간 props 전달 없이 Toolbar와 Settings에서 Context 값을 읽으세요.
+  // 1. NotificationProvider.jsx에 state와 변경 함수를 옮기세요.
+  // 2. 준비된 useNotification()으로 Toolbar와 Settings에서 Context 값을 읽으세요.
+  // 3. 중간 props 전달을 제거하세요.
   return (
     <div className="exercise-card">
       <Toolbar notificationsEnabled={notificationsEnabled} />

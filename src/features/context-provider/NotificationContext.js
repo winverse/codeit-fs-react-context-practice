@@ -6,10 +6,5 @@ import { createContext, useContext } from 'react';
 export const NotificationContext = createContext(null);
 
 export function useNotification() {
-  const context = useContext(NotificationContext);
-
-  // TODO: context가 null이면 NotificationProvider 밖에서 사용한 것이므로
-  // 사용 위치를 확인할 수 있는 오류를 발생시키세요.
-
-  return context;
+  return useContext(NotificationContext);
 }
